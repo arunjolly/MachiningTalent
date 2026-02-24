@@ -47,29 +47,32 @@ export default function HomePage() {
     <>
       <section className="section-wrap pb-10">
         <p className="kicker">Precision Recruiting</p>
-        <div className="mt-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+        <div className="mt-6 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-10">
           <div>
-            <h1 className="font-[var(--font-space)] text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="font-[var(--font-space)] text-3xl font-bold leading-tight text-white sm:text-4xl md:text-6xl">
               Build your{' '}
               <span className="bg-gradient-to-r from-slate-200 via-sky-300 to-slate-400 bg-clip-text text-transparent">
                 dream CNC team
               </span>{' '}
               without slowing production.
             </h1>
-            <p className="mt-5 max-w-2xl text-lg text-slate-300">
+            <p className="mt-4 max-w-2xl text-base text-slate-300 sm:text-lg">
               MachiningTalent connects precision manufacturers with proven machining professionals across setup, programming,
               and operations leadership.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
               <a
                 href="https://calendly.com/arun-jolly/machiningtalent-intro-call"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full bg-spark-500 px-6 py-3 text-sm font-bold text-white hover:bg-spark-600"
+                className="inline-flex w-full items-center justify-center rounded-full bg-spark-500 px-6 py-3 text-sm font-bold text-white hover:bg-spark-600 sm:w-auto"
               >
                 Book a Call
               </a>
-              <Link href="/employers" className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-slate-200 hover:border-white/40 hover:text-white">
+              <Link
+                href="/employers"
+                className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-slate-200 hover:border-white/40 hover:text-white sm:w-auto"
+              >
                 Hire Talent
               </Link>
             </div>
@@ -86,9 +89,9 @@ export default function HomePage() {
               />
               <div className="h-60 md:h-72" />
               <div className="absolute inset-0 bg-gradient-to-t from-steel-950 via-steel-950/20 to-transparent" />
-              <div className="absolute bottom-0 p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">{cncImages[0].label}</p>
-                <p className="mt-2 max-w-xl text-sm text-slate-100">{cncImages[0].note}</p>
+              <div className="absolute bottom-0 p-4 sm:p-5">
+                <p className="text-[11px] font-semibold tracking-[0.1em] text-cyan-200 sm:text-xs sm:uppercase sm:tracking-[0.2em]">{cncImages[0].label}</p>
+                <p className="mt-2 hidden max-w-xl text-sm text-slate-100 sm:block">{cncImages[0].note}</p>
               </div>
             </article>
 
@@ -99,12 +102,12 @@ export default function HomePage() {
                   alt={image.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 24vw"
-                  className={`h-44 w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-48 ${image.position}`}
+                  className={`h-52 w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-48 ${image.position}`}
                 />
-                <div className="h-44 md:h-48" />
+                <div className="h-52 md:h-48" />
                 <div className="absolute inset-0 bg-gradient-to-t from-steel-950 via-steel-950/20 to-transparent" />
                 <div className="absolute bottom-0 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">{image.label}</p>
+                  <p className="text-[11px] font-semibold tracking-[0.1em] text-cyan-200 sm:text-xs sm:uppercase sm:tracking-[0.2em]">{image.label}</p>
                 </div>
               </article>
             ))}
@@ -117,7 +120,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Role Coverage</p>
           <div className="mt-4 flex flex-wrap gap-2.5">
             {specialties.map((item) => (
-              <span key={item} className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-slate-100">
+              <span key={item} className="rounded-full border border-white/15 bg-white/5 px-3.5 py-2 text-xs font-medium text-slate-100 sm:px-4 sm:text-sm">
                 {item}
               </span>
             ))}

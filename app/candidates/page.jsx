@@ -107,12 +107,12 @@ export default function CandidatesPage() {
   return (
     <section className="section-wrap">
       <p className="kicker">For Candidates</p>
-      <h1 className="mt-4 font-[var(--font-space)] text-4xl font-bold text-white md:text-5xl">Apply</h1>
-      <p className="mt-4 max-w-3xl text-lg text-slate-300">
+      <h1 className="mt-4 font-[var(--font-space)] text-3xl font-bold text-white sm:text-4xl md:text-5xl">Apply</h1>
+      <p className="mt-4 max-w-3xl text-base text-slate-300 sm:text-lg">
         Submit your details and we will review your background for matching roles.
       </p>
 
-      <div className="mt-8 panel p-6 md:p-8">
+      <div className="mt-8 panel p-5 sm:p-6 md:p-8">
         <form onSubmit={onSubmit} className="grid gap-4 md:grid-cols-2">
           <label className="block">
             <span className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-slate-300">Name</span>
@@ -180,7 +180,7 @@ export default function CandidatesPage() {
           </label>
 
           <div className="md:col-span-2">
-            <button type="submit" className="rounded-full bg-spark-500 px-6 py-3 text-sm font-bold text-white hover:bg-spark-600">
+            <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-spark-500 px-6 py-3 text-sm font-bold text-white hover:bg-spark-600 sm:w-auto">
               Submit Application
             </button>
           </div>

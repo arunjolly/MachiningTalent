@@ -18,15 +18,15 @@ export default function EmployersPage() {
     <>
       <section className="section-wrap">
         <p className="kicker">For Employers</p>
-        <h1 className="mt-4 font-[var(--font-space)] text-4xl font-bold text-white md:text-5xl">Recruiting built for high-precision shops.</h1>
-        <p className="mt-4 max-w-3xl text-lg text-slate-300">
+        <h1 className="mt-4 font-[var(--font-space)] text-3xl font-bold text-white sm:text-4xl md:text-5xl">Recruiting built for high-precision shops.</h1>
+        <p className="mt-4 max-w-3xl text-base text-slate-300 sm:text-lg">
           We specialize in placing vetted CNC and other manufacturing talent that can hold tolerance, protect output, and strengthen your floor.
         </p>
       </section>
 
       <section className="section-wrap pt-0">
         <div className="grid gap-5 md:grid-cols-2">
-          <div className="panel p-6">
+          <div className="panel p-5 sm:p-6">
             <h2 className="text-2xl font-bold text-white">Common challenges</h2>
             <ul className="mt-4 space-y-3 text-slate-300">
               {painPoints.map((item) => (
@@ -34,7 +34,7 @@ export default function EmployersPage() {
               ))}
             </ul>
           </div>
-          <div className="panel p-6">
+          <div className="panel p-5 sm:p-6">
             <h2 className="text-2xl font-bold text-white">How we help</h2>
             <ul className="mt-4 space-y-3 text-slate-300">
               {offerings.map((item) => (
