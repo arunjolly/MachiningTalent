@@ -4,7 +4,7 @@ import BookCallCTA from '@/components/BookCallCTA';
 
 const stats = [
   { label: 'Avg. Time to Present', value: '5 days' },
-  { label: 'Roles Filled', value: '600+' },
+  { label: 'Roles Filled', value: '350+' },
   { label: 'Retention at 12 Months', value: '91%' },
 ];
 
